@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(198, 198, 198);
+    cursor: default;
+}
+
+.calc-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    position: relative;
+    width: 40%;
+    height: 80%;
+    padding: 32px;
+    border-radius: 32px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.display {
+    position: relative;
+    border-radius: 8px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    font-size: 1.3em;
+    font-family: cursive;
+    letter-spacing: 1px;
+}
+
+.sol,
+.eqn {
+    height: 1.5em;
+}
+
+.sol {
+    text-align: right;
+}
+
+.btn-container {
+    position: relative;
+    margin-top: 32px;
+}
+
+.row {
+    margin: 12px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.btn {
+    margin: 0 12px;
+}
+
+.btn-content {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 50%;
+    font-family: cursive;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.btn-content:active {
+    background: rgb(255, 255, 255, 0.5);
+}
+
+#cancel {
+    color: rgb(255, 71, 71);
+}
+
+.green-text {
+    color: rgb(26, 255, 0);
+}
+
+.green-bg {
+    background: rgb(17, 167, 0);
+}
+
+.green-bg:active {
+    background: rgb(26, 255, 0);
+}
